@@ -7,19 +7,23 @@ setup.
 
 ## Features
 
- - CLI Arg parsing with [clap](https://docs.rs/clap) to easily configure what runs
-   - By default, `cargo run` will run your most recent day, which is usually what you 
+# TODO: 
+- [ ] add a spot for adding the test cases that are embedded in the aoc
+puzzle spec.
+
+- CLI Arg parsing with [clap](https://docs.rs/clap) to easily configure what runs
+  - By default, `cargo run` will run your most recent day, which is usually what you 
 want.
-   - You can run a specific day with `cargo r -- -d4` (replacing 4 with the day you want to run).
+  - You can run a specific day with `cargo r -- -d4` (replacing 4 with the day you want to run).
 or run all of them with `cargo run -- -a`.
- - Solutions are automatically timed so that you have a general idea of execution 
+- Solutions are automatically timed so that you have a general idea of execution 
 time. Of course, make sure to run with the `--release` flag before making any 
 optimizations.
- - Pretty output: This template makes use of the [colored](https://docs.rs/colored)
+- Pretty output: This template makes use of the [colored](https://docs.rs/colored)
 crate to color and bold output. The results of your code are colored according to
 `solutions.rs`: blue if you haven't entered a solution yet, green if they match,
 or red if they don't match. 
- - Tests: If you put your solutions in `solutions.rs`, running `cargo test` will 
+- Tests: If you put your solutions in `solutions.rs`, running `cargo test` will 
  test the current day. This can be helpful if you want to refactor your solution
  after you solved it. To test every day, run `cargo test -- --include-ignored`.
 
