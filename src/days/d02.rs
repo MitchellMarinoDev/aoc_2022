@@ -57,15 +57,9 @@ pub fn solve(input: String) -> (String, String) {
             _ => panic!("unexpected shape {}", s1),
         };
 
-        games_p1.push(Game {
-            s1: p1_s1,
-            s2,
-        });
+        games_p1.push(Game { s1: p1_s1, s2 });
 
-        games_p2.push(Game {
-            s1: p2_s1,
-            s2,
-        });
+        games_p2.push(Game { s1: p2_s1, s2 });
     }
 
     let p1 = games_p1.iter().map(|g| g.score()).sum::<i32>();
