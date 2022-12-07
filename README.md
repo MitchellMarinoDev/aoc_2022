@@ -10,6 +10,9 @@ setup.
 # TODO: 
 - [ ] add a spot for adding the test cases that are embedded in the aoc
 puzzle spec.
+This should use the same solve function, but feed the test inputs.
+- [ ] Move the solutions to the day file, not a separate solutions.rs
+- [ ] Try to auto detect the day.
 
 - CLI Arg parsing with [clap](https://docs.rs/clap) to easily configure what runs
   - By default, `cargo run` will run your most recent day, which is usually what you 

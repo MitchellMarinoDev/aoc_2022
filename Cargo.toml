@@ -7,5 +7,7 @@ description = "My Advent of Code solutions for 2022 in Rust!"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+itertools = "0.10"
+
 clap = { version = "4.0", features = ["derive"] }
 colored = "2.0"
