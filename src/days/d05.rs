@@ -55,9 +55,8 @@ pub fn solve(input: String) -> (String, String) {
     let p1 = get_answer(&stacks_p1);
 
     for instruction in instructions.iter() {
-        let (from_stack, to_stack) =
-            index_twice(&mut stacks_p2, instruction.from, instruction.to)
-                .expect("to/from stack indexes are out of bounds or same index");
+        let (from_stack, to_stack) = index_twice(&mut stacks_p2, instruction.from, instruction.to)
+            .expect("to/from stack indexes are out of bounds or same index");
 
         let start_idx = from_stack.len() - instruction.count;
         for move_crate in &from_stack[start_idx..] {

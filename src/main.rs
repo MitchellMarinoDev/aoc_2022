@@ -12,7 +12,7 @@ mod solutions;
 /// The puzzle day that you are currently on.
 ///
 /// You should increment this constant as you go, in order for this to work properly.
-const CURRENT_DAY: usize = 6;
+const CURRENT_DAY: usize = 7;
 
 fn main() {
     let args = Args::parse();
